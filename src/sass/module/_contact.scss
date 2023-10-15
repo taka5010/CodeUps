@@ -1,0 +1,157 @@
+@use "global" as *;
+
+.contact {
+  margin-top: rem(80);
+  // padding-bottom: rem(100);
+}
+
+.contact__content {
+  position: relative;
+  padding-left: rem(15);
+  padding-right: rem(15);
+  @include mq(md) {
+    display: flex;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    max-width: rem(1130);
+    width: 100%;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    padding-bottom: rem(90);
+    padding-top: rem(80);
+    margin: auto;
+  }
+}
+
+
+
+.contact__inner {
+  // position: relative;
+  // padding-left: rem(15);
+  // padding-right: rem(15);
+  @include mq(md) {
+    // display: flex;
+    // box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    // justify-content: center;
+    // align-items: center;
+    // max-width: rem(1130);
+    // width: 100%;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    // padding-bottom: rem(90);
+    // padding-top: rem(80);
+    // margin: auto;
+  }
+}
+
+.contact__inner::before {
+  background-image: url(../images/common/price_logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 100%;
+  right: calc(50% - min(47vw, 170rem));
+  max-width: rem(109);
+  position: absolute;
+  top: rem(-25);
+  width: calc( 109 / 375 * 100%);
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.contact__company {
+  text-align: center;
+  @include mq(md) {
+    width: calc( 569 / 1080 * 100%);
+    position: relative;
+  }
+}
+
+.contact__company::before {
+  display: none;
+  @include mq(md) {
+    content: "";
+    position: absolute;
+    width: rem(2);
+    height: 100%;
+    background-color: $green;
+    display: block;
+    right: -10%;
+  }
+}
+
+.contact__title {
+  width: calc( 295 / 375 * 100%);
+  border-bottom: 1px solid $green;
+  text-align: center;
+  margin: auto;
+  @include mq(md) {
+    width: 100%;
+  }
+}
+
+.contact__logo {
+  width: rem(174);
+  margin: auto;
+}
+
+.contact__info {
+  margin-top: rem(16);
+  @include mq(md) {
+    display: flex;
+    column-gap: calc(21 / 440 * 100%);
+  }
+}
+
+.contact__access {
+  @include mq(md) {
+    width: calc(146 / 440 * 100%);
+  }
+}
+
+.contact__access li {
+  font-size: rem(16);
+  line-height: calc( 24 / 16);
+  
+}
+
+.contact__map {
+  width: calc(295 / 345 * 100%);
+  margin-top: rem(16);
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+    width: calc( 273 / 440 * 100%);
+    margin-top: 0;
+  }
+}
+
+.contact__map img {
+  aspect-ratio: 295 / 160 ;
+  object-fit: cover;
+}
+
+.contact__form {
+  margin-top: rem(40);
+  @include mq(md) {
+    width: calc( 511 / 1080 * 100%);
+    margin-top: 0;
+  }
+}
+
+.contact__text {
+  text-align: center;
+  font-size: rem(14);
+  color: $green;
+  line-height: calc(18 / 14);
+}
+
+.contact__btn {
+  margin-top: rem(40);
+  text-align: center;
+}
+
+

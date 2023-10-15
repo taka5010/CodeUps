@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.campaign {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}
+
+.campaign__inner {
+  padding: 0 $padding-sp;
+  padding: 0;
+  @include mq(md) {
+    padding: 0 $padding-pc;
+  }
+}
+
+.campaign__items {
+  margin-top: rem(40);
+}
+
+.campaign__container {
+  position: relative;
+}
+.campaign__btn {
+  text-align: center;
+  margin-top: rem(30);
+}

@@ -1,0 +1,91 @@
+@use "global" as *;
+
+.campaign-card {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.campaign-card__wrapper {
+  padding: rem(10);
+}
+
+.campaign-card__img {
+  position: relative;
+  width: 100%;
+
+}
+
+.campaign-card__img::before {
+  padding-top: calc(188 / 288 * 100% );
+  content: "";
+  display: block;
+}
+
+.campaign-card__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.campaign-card__header {
+  border-bottom: 1px solid $green;
+  padding-bottom: rem(8);
+}
+
+.campaign-card__body {
+  padding: rem(16) rem(16) rem(24) rem(16) ;
+}
+
+.campaign-card__category {
+  display: inline-block;
+  font-size: rem(12);
+  color: $green;
+  line-height: calc(22 / 12);
+  border: 1px solid $green;
+  padding: rem(4) rem(12);
+}
+
+.campaign-card__title {
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: calc(24 / 19);
+  margin-top: rem(4);
+}
+
+.campaign-card__text {
+  margin-top: rem(8);
+  font-size: rem(14);
+  text-align: center;
+}
+
+.campaign-card__pay {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-family: $number-font-family;
+  font-weight: $bold;
+}
+
+.campaign-card__pay-pre {
+  position: relative;
+  font-size: rem(24);
+}
+
+.campaign-card__pay-pre::before  {
+  position: absolute;
+  content: "";
+  width: rem(93);
+  height: rem(3);
+  background-color: #C94800;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.campaign-card__pay-post {
+  font-size: rem(40);
+  color: $green;
+  margin-left: rem(16);
+}

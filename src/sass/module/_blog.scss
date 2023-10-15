@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.blog {
+  margin-top: rem(80);
+}
+
+.blog__inner {
+  @include mq(md) {
+    max-width: rem(1080);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.blog__items {
+  margin-top: rem(24);
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(40);
+  }
+}
+
+.blog__item + .blog__item {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.blog__btn {
+  margin-top: rem(40);
+  text-align: center;
+}
+

@@ -1,0 +1,133 @@
+@use "global" as *;
+
+.about {
+  margin-top: rem(40);
+  @include mq(md) {
+    position: relative;
+  }
+}
+
+.about__inner {
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
+  @include mq(md) {
+    position: relative;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    max-width: rem(1080);
+    margin: auto;
+  }
+  
+}
+
+.about__images {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(24);
+}
+
+.about__left-image {
+  z-index: 20;
+  @include mq(md) {
+    max-width: rem(399);
+    width: 100%;
+    width: calc( 399 / 1080 * 100%);
+  }
+}
+
+.about__left-image img {
+  aspect-ratio: 128 / 194;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 399 / 606;
+  }
+}
+
+.about__right-image {
+  margin-left: -20%;
+  margin-top: 7%;
+  @include mq(md) {
+    position: relative;
+    max-width: rem(880);
+    width: 100%;
+    margin-top: rem(70);
+    margin-left: -18%;
+    width: calc( 880 / 1080 * 100%);
+  }
+}
+
+.about__right-image img {
+  aspect-ratio: 281 / 186;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 880 / 581;
+  }
+}
+
+.about__art {
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    // right: -98px;
+    // bottom: -60px;
+    width: rem(194);
+    height: auto;
+    width: 23%;
+    // right: -24%;
+    top: 150%;
+    right:calc(50% - min(50vw,rem(586)));
+    // right:calc(50% - 50vw);
+  }
+}
+
+.about__art img {
+  aspect-ratio: initial;
+  object-fit: contain;
+}
+
+.about__text {
+  margin-top: rem(40);
+  @include mq(md) {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 505;
+    width: calc(840 / 1440 * 100%);
+  }
+}
+.about__header {
+  font-size: rem(40);
+  color: $green;
+  text-align: left;
+  font-family: $en-font-family;
+  line-height: 1;
+  white-space: nowrap;
+  @include mq(md) {
+    font-size: rem(80);
+    line-height: calc( 100 / 80);
+    color: $white;
+  }
+}
+
+.about__body {
+  margin-top: rem(16);
+}
+.about__detail {
+  font-size: rem(16);
+  line-height: calc(18 / 16);
+  @include mq(md) {
+    max-width: rem(400);
+    width: 100%;
+    color: $white;
+    margin-left: 20px;
+  }
+}
+
+.about__btn {
+  text-align: center;
+  margin-top: rem(40);
+}
