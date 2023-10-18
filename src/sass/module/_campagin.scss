@@ -1,10 +1,14 @@
 @use "global" as *;
 
 .campaign {
-  margin-top: rem(40);
+  margin-top: rem(48);
   @include mq(md) {
     margin-top: rem(120);
   }
+}
+
+.campaign .swiper-slide:first-child {
+  margin-left: 14px;
 }
 
 .campaign__inner {
@@ -16,11 +20,18 @@
 }
 
 .campaign__items {
-  margin-top: rem(40);
+  margin-top: rem(28);
+  position: relative;
 }
 
 .campaign__container {
   position: relative;
+  padding-bottom: 10px;
+  overflow: hidden; // 2.代わりに親要素で hidden にする
+  .swiper {
+    overflow: visible; // 1.はみ出させるように visible で上書き
+  }
+
 }
 .campaign__btn {
   text-align: center;

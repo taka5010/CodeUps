@@ -18,10 +18,10 @@ var mv_swiper = new Swiper(".mv_Swiper", {
   loop: true,
   spaceBetween: 30,
   centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   // pagination: {
   //   el: ".swiper-pagination",
   //   clickable: true,
@@ -36,10 +36,10 @@ var mv2_swiper = new Swiper(".mv2_Swiper", {
   loop: true,
   spaceBetween: 30,
   centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   // pagination: {
   //   el: ".swiper-pagination",
   //   clickable: true,
@@ -54,9 +54,10 @@ var mv2_swiper = new Swiper(".mv2_Swiper", {
 //campaignのswiper
     var swiper = new Swiper(".mySwiper", {
       loop: true, 
-      spaceBetween: 15,
-      centeredSlides: true,
-      slidesPerView: 1.2, // 一度に表示する枚数
+      // initialSlide: 1.5, 
+      spaceBetween: 20,
+      // centeredSlides: true,
+      slidesPerView: 1.31, // 一度に表示する枚数
       breakpoints: {
         // スライドの表示枚数：500px以上の場合
         768: {
