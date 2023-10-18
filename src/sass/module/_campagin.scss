@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .campaign {
-  margin-top: rem(48);
+  margin-top: rem(45);
   @include mq(md) {
     margin-top: rem(120);
   }
@@ -9,19 +9,25 @@
 
 .campaign .swiper-slide:first-child {
   margin-left: 14px;
+  @include mq(md) {
+    margin-left: rem(180);
+  }
 }
 
 .campaign__inner {
-  padding: 0 $padding-sp;
-  padding: 0;
-  @include mq(md) {
-    padding: 0 $padding-pc;
-  }
+  // padding: 0 $padding-sp;
+  // padding: 0;
+  // @include mq(md) {
+  //   padding: 0 $padding-pc;
+  // }
 }
 
 .campaign__items {
   margin-top: rem(28);
   position: relative;
+  @include mq(md) {
+    margin-top: rem(38);
+  }
 }
 
 .campaign__container {
@@ -36,4 +42,7 @@
 .campaign__btn {
   text-align: center;
   margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(71);
+  }
 }

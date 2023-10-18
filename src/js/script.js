@@ -55,13 +55,14 @@ var mv2_swiper = new Swiper(".mv2_Swiper", {
     var swiper = new Swiper(".mySwiper", {
       loop: true, 
       // initialSlide: 1.5, 
-      spaceBetween: 20,
+      spaceBetween: 24,
       // centeredSlides: true,
       slidesPerView: 1.31, // 一度に表示する枚数
       breakpoints: {
         // スライドの表示枚数：500px以上の場合
         768: {
-          slidesPerView: 3.5,
+          slidesPerView: 3.96,
+          spaceBetween: 40,
         }
       },
       // autoplay: {

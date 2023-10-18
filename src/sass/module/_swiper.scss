@@ -9,7 +9,7 @@
     display: block;
     height: rem(80);
     width: rem(80);
-    top: rem(-80);
+    top: rem(-82);
     transition: 0.5s;
   }
 }
@@ -58,7 +58,7 @@
 }
 
 .swiper-button-next {
-  right:calc(50% - min(45vw,rem(600)));
+  right:calc(50% - min(45vw,rem(540)));
 }
 
 .swiper-button-prev::before{

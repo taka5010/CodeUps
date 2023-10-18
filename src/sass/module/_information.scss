@@ -1,21 +1,23 @@
 @use "global" as *;
 
 .information {
-  margin-top: rem(80);
+  margin-top: rem(85);
   background-color: $bg-green;
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-top: rem(84);
+  padding-bottom: rem(84);
   z-index: -2;
   position: relative;
   @include mq(md) {
     margin-top: rem(140);
+    padding-top: rem(100);
+    padding-bottom: rem(76);
   }
 
 }
 
 .information__inner {
-  padding-left: $padding-sp;
-  padding-right: $padding-sp;
+  padding-left: rem(15);
+  padding-right: rem(15);
   @include mq(md) {
     padding-left: $padding-pc;
     padding-right: $padding-pc
@@ -46,9 +48,17 @@
   object-fit: cover;
 }
 
+.information__img.js-inview {
+  margin-bottom: rem(23);
+  @include mq(md) {
+    margin-top: rem(38);
+  }
+}
+
 .information__text {
   margin-top: rem(24);
   @include mq(md) {
+    margin-top: 0;
     margin-left: rem(48);
   }
 }
@@ -61,6 +71,10 @@
   font-size: rem(20);
   font-weight: $bold;
   line-height: calc(24 / 20);
+  @include mq(md) {
+    font-size: rem(24);
+    line-height: 1.7;
+  }
 }
 
 .information__body {

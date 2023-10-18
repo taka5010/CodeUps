@@ -9,7 +9,7 @@
   font-family: $en-font-family;
   font-weight: $normal;
   line-height: 1;
-  text-transform: capitalize;
+  text-transform: lowercase; 
   @include mq(md) {
     font-size: rem(40);
   }
@@ -17,11 +17,16 @@
 
 .section-header__entitle::first-letter {
   color: $green;
+  text-transform: capitalize;
 }
+
+
 
 .section-header__entitle span {
   text-transform: lowercase;
 }
+
+
 
 .section-header__entitle.section-header__entitle--contact {
   font-size: rem(80);
@@ -40,3 +45,16 @@
   }
 }
 
+.section-header__entitle--blog,
+.section-header__jatitle--blog {
+  @include mq(md) {
+    color: $white
+  }
+}
+
+.section-header__entitle--blog::first-letter {
+  @include mq(md) {
+    color: $white;
+    text-transform: capitalize;
+  }
+}
