@@ -102,11 +102,18 @@
     justify-content: center;
     position: absolute;
     z-index: 505;
-    width: calc(840 / 880 * 100%);
+    max-width: calc(840 / 880 * 100%);
+    // width: 100%;
+    // width: calc(840 / 880 * 100%);
     left: 9.2%;
     top: 50%;
     transform: translateY(-50%);
     margin-top: rem(43);
+
+    // transform: translate(-50%, -50%);
+    // z-index: 505;
+    // width: 100%;
+    // left: 50%;
   }
 }
 .about__header {
