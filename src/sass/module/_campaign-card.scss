@@ -14,17 +14,26 @@
 
 }
 
-.campaign-card__img::before {
-  padding-top: calc(188 / 288 * 100% );
-  content: "";
-  display: block;
+// .campaign-card__img::before {
+//   padding-top: calc(188 / 288 * 100% );
+//   content: "";
+//   display: block;
+// }
+
+// .campaign-card__img img {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   object-fit: cover;
+// }
+
+.campaign-card__img {
+  width: 100%;
 }
 
 .campaign-card__img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  aspect-ratio: 288 / 188;
   object-fit: cover;
 }
 

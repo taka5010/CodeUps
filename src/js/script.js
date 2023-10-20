@@ -61,6 +61,10 @@ var mv2_swiper = new Swiper(".mv2_Swiper", {
       breakpoints: {
         // スライドの表示枚数：500px以上の場合
         768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1180: {
           slidesPerView: 3.96,
           spaceBetween: 40,
         }
@@ -102,4 +106,23 @@ color.on('inview', function(){
     });
   });
 
+
+
+
 });
+
+// const els = document.getElementsByClassName('js-txtLimit');
+// const len = 85;//最大文字数を指定します
+
+// for(let i = 0; i < els.length; i++) {
+//     const el = els[i];
+//     const str = el.textContent.trim();
+
+//     if (str.length > len) {
+//         el.textContent = str.substring(0, len) + '…';
+//     }
+// }
+
+
+
+

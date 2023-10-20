@@ -74,16 +74,24 @@
   margin-top: rem(4);
   border-bottom: 1px solid $green;
   padding-bottom: rem(5);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
   @include mq(md) {
     font-size: rem(24);
     margin-top: rem(8);
+    -webkit-line-clamp: 2;
   }
 }
 
 .voice-card__headerRight {
   // margin-left: rem(5);
+  max-width: calc( 151 / 313 * 100%);
+  width: 100%;
 }
 .voice-card__img {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,5 +118,12 @@
 
 .voice-card__text {
   font-size: rem(16);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  overflow: hidden;
+  @include mq(md) {
+    -webkit-line-clamp: 7;
+  }
 }
 

@@ -27,12 +27,6 @@
 
 }
 
-// .blog-card__img::before {
-//   padding-top: calc(188 / 288 * 100% );
-//   content: "";
-//   display: block;
-// }
-
 .blog-card__img img {
   aspect-ratio: 300 / 200;
   object-fit: cover;
@@ -69,35 +63,9 @@
   margin-top: rem(16);
   font-size: rem(16);
   // text-align: center;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5; 
+  overflow: hidden;
 }
-
-// .blog-card__pay {
-//   display: flex;
-//   justify-content: center;
-//   align-items: baseline;
-//   font-family: $number-font-family;
-//   font-weight: $bold;
-// }
-
-// .blog-card__pay-pre {
-//   position: relative;
-//   font-size: rem(24);
-// }
-
-// .blog-card__pay-pre::before  {
-//   position: absolute;
-//   content: "";
-//   width: rem(93);
-//   height: rem(3);
-//   background-color: #C94800;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
-
-
-// .blog-card__pay-post {
-//   font-size: rem(40);
-//   color: $green;
-//   margin-left: rem(16);
-// }

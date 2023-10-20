@@ -11,6 +11,7 @@
     margin-top: rem(140);
     padding-top: rem(100);
     padding-bottom: rem(76);
+    z-index: initial;
   }
 
 }
@@ -86,4 +87,7 @@
 .information__btn {
   text-align: center;
   padding-top: rem(40);
+  position: relative;
+  Z-INDEX: 10000;
+  
 }
